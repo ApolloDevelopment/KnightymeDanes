@@ -43,6 +43,11 @@ body {
   margin: 40px 0;
 }
 
+.dropdown-item:active {
+  background-color: #f8f9fa;
+  color: #16181b;
+}
+
 .page-header {
   font-size: 48px;
   text-align: center;
