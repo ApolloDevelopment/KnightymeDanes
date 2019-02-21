@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+/*
+
+font-family: 'Arial', sans-serif;
+font-family: 'Georgia', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.bg-light {
+  background-color: #FFF !important;
+}
+
+.navbar-brand {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 28px;
+}
+
+.navbar img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.content {
+  margin: 40px 0;
+}
+
+.page-header {
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+}
+
+.header-img {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  margin: 0 30px;
+  border: 1.5px #636e72 solid;
+
+}
+
+.site-description {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 95%;
+}
+
+.page-img {
+  border: 1px #636e72 solid;
+  box-shadow: #2d3436 0.1px 0.1px 5px;
+}
+
+.home-pg-img {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-sect {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+.contact-sect h2 {
+  border-bottom: 2px #000 solid;
+}
+.contact-sect p {
+  margin: 0 20px;
+}
+
+.footer {
+  background-color: #2d3436;
+  text-align: center;
+  padding: 35px;
+  color: #FFF;
+  font-size: 14px;
+
+}
+.footer p {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+.admin-link {
+  font-size: 12px;
+  color: #ccc;
+  padding: 5px;
+}
+.admin-link:hover {
+  color: #fff;
+}
+
+/* Navbar breaking point
+
+TODO:
+  - make image display none
+  - change text sizes
+
+
+ */
+
+@media(max-width:766px) {
+  .header-img {
+    display: none;
+  }
+  .content {
+    margin: 30px 0;
+  }
+  .site-description {
+    font-weight: normal;
+  }
+}
+
+@media(max-width:430px){
+  .page-header {
+    font-size: 36px;
+  }
+  .content {
+    margin: 20px 0;
+  }
+}
+
+@media(max-width:366px){
+  .navbar img {
+    display: none;
+  }
+}
