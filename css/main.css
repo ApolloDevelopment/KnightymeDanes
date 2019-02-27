@@ -21,8 +21,8 @@ body {
   font-weight: bold;
 }
 
-.bg-light {
-  background-color: #FFF !important;
+i {
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-brand {
@@ -30,37 +30,86 @@ body {
   font-size: 28px;
 }
 
-.navbar img {
-  width: 45px;
-  margin-right: 10px;
+.align-right {
+  text-align: right !important;
+} .align-left {
+  text-align: left !important;
+}
+
+table {
+  width: 100%;
+}
+table tr td p {
+  margin-right: 5px !important;
+}
+
+.active a {
+  color: rgba(0,0,0,.9) !important;
+}
+
+.nav {
+  margin-top: 20px;
 }
 
 .nav-link {
   font-size: 18px;
+  color: rgba(0,0,0,.5) !important;
+}
+.nav-link:hover {
+  color: rgba(0,0,0,.7) !important;
+}
+
+.top-page-img {
+  width: 160px;
+  position: absolute;
+  top: 0;
+  border: 1.5px #636e72 solid;
+} .left {
+  left: 0;
+} .right {
+  right: 0;
+}
+
+.nav2-expand-btn {
+  display: none;
+  font-size: 40px;
+}
+
+.nav2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  z-index: 99;
+  padding: 0px 10px;
+  background-color: #2d3436;
+  transition: 0.4s ease-out;
+}
+.nav2 .nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 25px;
+}
+.nav2 .nav-link:hover, #close:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+#close {
+  font-size: 50px;
+  text-align: right;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0px 10px;
 }
 
 .content {
   margin: 40px 0;
 }
 
-.dropdown-item:active {
-  background-color: #f8f9fa;
-  color: #16181b;
-}
-
 .page-header {
   font-size: 48px;
   text-align: center;
   width: 100%;
-}
-
-.header-img {
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  margin: 0 30px;
-  border: 1.5px #636e72 solid;
-
 }
 
 .site-description {
@@ -77,9 +126,9 @@ body {
 }
 
 .home-pg-img {
-  margin: 20px auto;
+  margin: 20px 20% 20px 20%;
   text-align: center;
-  width: 100%;
+  width: 60%;
 }
 
 .contact-sect {
@@ -116,14 +165,35 @@ body {
   color: #fff;
 }
 
+@media(max-width: 1280px) {
+  .top-page-img {
+    display: none;
+  }
+  .home-pg-img {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
 /* Navbar breaking point
 
 TODO:
-  - make image display none
-  - change text sizes
-
+ -
 
  */
+
+@media(max-width:992px) {
+  .nav {
+    display: none;
+  }
+  .nav2-expand-btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    left: 15px;
+    top: 5px;
+  }
+}
 
 @media(max-width:766px) {
   .header-img {
