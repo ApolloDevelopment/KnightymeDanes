@@ -37,12 +37,17 @@ card layout (be sure to place inside a row div)
 
 <div class="col-md-4">
   <div class="card mb-4 box-shadow">
-    <img class="card-img-top" src="img/image1.jpg"></img>
+    <div class="card-div-top" style="background-image:url('../img/female_b-lab.jpg')" onclick="window.location='card.html?id=14'">
+      <div class="view-opt-contain">
+        <p class="view-txt">View</p>
+      </div>
+    </div>
     <div class="card-body">
+      <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <button type="button" class="btn btn-lg btn-outline-secondary" onclick="window.location='test.html?id=23&img=docery.jpg&editable=true'">Edit</button>
+          <button type="button" class="btn btn-lg btn-outline-secondary" onclick="window.location='edit.html?id=14'">Edit</button>
         </div>
         <small class="text-muted">9 mins ago</small>
       </div>
